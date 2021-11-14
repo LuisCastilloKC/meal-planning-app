@@ -1,7 +1,7 @@
 class RegistrationsController < ApplicationController
     # instantiates new user
     def new
-        @user = usern.new
+        @user = User.new
     end
 
     def create
