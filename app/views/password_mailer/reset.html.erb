@@ -1,8 +1,4 @@
 Hi <%= params[:user].email %>, <br>
-Someone request a password reset
+Someone requested a password reset
 Click the link above if you recognise the activity, link expires in 15 minutes
 <%= link_to 'Reset Password', password_reset_edit_url(token: @token) %>
-
-<p>
-  <%= @greeting %>, find me in app/views/password_mailer/reset.html.erb
-</p>
